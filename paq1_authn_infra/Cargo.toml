@@ -11,6 +11,17 @@ password-hash = {workspace = true}
 chrono = { workspace = true }
 async-trait = { workspace = true }
 paq1-lib-error-handler = { workspace = true }
+paq1_storage_core = { workspace = true }
+paq1_storage_infra = { workspace = true }
+
+#### actix
+actix-web = { workspace = true }
+actix-cors = { workspace = true }
 
 #### sercurite
 argon2 = { workspace = true }
+serde = { workspace = true }
+
+#### dbs
+mongodb = { workspace = true }
+futures = "0.3.31"

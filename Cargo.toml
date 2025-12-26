@@ -7,10 +7,15 @@ members = ["paq1_authn_core", "paq1_authn_infra"]
 rand = "0.9.0"
 base64 = "0.22.1"
 chrono = "0.4.42"
+serde = { version = "1.0.228", features = ["derive"] }
 # tokio = { version = "1.43.0", features = ["full"] }
 async-trait = { version = "0.1.80" }
 # config = { version = "0.15.8" }
 # dotenv = { version = "0.15.0" }
+
+#### actix
+actix-web = { version = "4.10.2" }
+actix-cors = "0.7.1"
 
 #### security deps
 # jsonwebtoken = "10.2.0"
@@ -18,4 +23,9 @@ argon2 = { version = "0.6.0-rc.2", features = ["getrandom"] }
 password-hash = "0.6.0-rc.6"
 # passwords = { version = "3.1.16", features = ["crypto", "common-password"]}
 
-paq1-lib-error-handler = { git = "https://github.com/paq1/paq1-lib-error-handler.git", branch = "master", features = ["combine"] }
+#### dbs
+mongodb = { version = "3.2.0", features = ["sync"] }
+
+paq1-lib-error-handler = { git = "https://github.com/paq1/paq1-lib-error-handler.git", branch = "master", features = ["combine"], version = "0.2.0"}
+paq1_storage_core = { git = "https://github.com/paq1/paq1-lib-storage.git", branch = "master", version = "0.2.0"}
+paq1_storage_infra = { git = "https://github.com/paq1/paq1-lib-storage.git", branch = "master", version = "0.2.0"}
