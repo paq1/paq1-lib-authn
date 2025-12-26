@@ -1,0 +1,21 @@
+[workspace]
+resolver = "2"
+members = ["paq1_authn_core", "paq1_authn_infra"]
+
+
+[workspace.dependencies]
+rand = "0.9.0"
+base64 = "0.22.1"
+chrono = "0.4.42"
+# tokio = { version = "1.43.0", features = ["full"] }
+async-trait = { version = "0.1.80" }
+# config = { version = "0.15.8" }
+# dotenv = { version = "0.15.0" }
+
+#### security deps
+# jsonwebtoken = "10.2.0"
+argon2 = { version = "0.6.0-rc.2", features = ["getrandom"] }
+password-hash = "0.6.0-rc.6"
+# passwords = { version = "3.1.16", features = ["crypto", "common-password"]}
+
+paq1-lib-error-handler = { git = "https://github.com/paq1/paq1-lib-error-handler.git", branch = "master", features = ["combine"] }
