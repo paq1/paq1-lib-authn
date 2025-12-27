@@ -1694,7 +1694,7 @@ source = "git+https://github.com/paq1/paq1-lib-error-handler.git?branch=master#1
 
 [[package]]
 name = "paq1_authn_core"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "async-trait",
  "chrono",
@@ -1703,7 +1703,7 @@ dependencies = [
 
 [[package]]
 name = "paq1_authn_infra"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "actix-cors",
  "actix-web",
