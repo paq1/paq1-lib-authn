@@ -4,6 +4,7 @@ use crate::apikey::dbo::ApiKeyDBO;
 use paq1_storage_core::prelude::{Query, DAO};
 use paq1_storage_infra::daos::mongo::mongo_dao::MongoDao;
 use mongodb::bson::doc;
+use paq1_storage_core::data::quick_search::QuickSearchPath;
 
 #[async_trait]
 pub trait ApiKeyDAO: DAO<ApiKeyDBO, String, Error> + Send + Sync {
@@ -57,6 +58,10 @@ impl DAO<ApiKeyDBO, String, Error> for MongoApiKeyDao {
 
     async fn delete_all(&self) -> Result<(), Error> {
         self.underlying.delete_all().await.map_err(|err| Error::Failure(ErrorWithCode::new("REDERR", 500,format!("{err}").as_str())))
+    }
+
+    async fn quick_search(&self, _chaine: &str, _paths: Vec<QuickSearchPath>) -> Result<Vec<ApiKeyDBO>, Error> {
+        Err(Error::Failure(ErrorWithCode::new("QUSERR", 501, "quick search not implemented for apikey")))
     }
 
     async fn count(&self) -> Result<u64, Error> {
