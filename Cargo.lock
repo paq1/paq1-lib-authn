@@ -1724,19 +1724,18 @@ dependencies = [
 
 [[package]]
 name = "paq1_storage_core"
-version = "0.2.0"
-source = "git+https://github.com/paq1/paq1-lib-storage.git?branch=master#078e785018365991f2d81634605068f7f0ae713a"
+version = "0.3.0"
+source = "git+https://github.com/paq1/paq1-lib-storage.git?branch=master#864749ce1bd53422f632e401ff4bf4e7bf378f40"
 dependencies = [
  "async-trait",
  "paq1-lib-error-handler",
- "serde",
  "tokio",
 ]
 
 [[package]]
 name = "paq1_storage_infra"
-version = "0.2.0"
-source = "git+https://github.com/paq1/paq1-lib-storage.git?branch=master#078e785018365991f2d81634605068f7f0ae713a"
+version = "0.3.0"
+source = "git+https://github.com/paq1/paq1-lib-storage.git?branch=master#864749ce1bd53422f632e401ff4bf4e7bf378f40"
 dependencies = [
  "async-trait",
  "config",
