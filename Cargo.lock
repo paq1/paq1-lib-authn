@@ -1694,7 +1694,7 @@ source = "git+https://github.com/paq1/paq1-lib-error-handler.git?branch=master#1
 
 [[package]]
 name = "paq1_authn_core"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "async-trait",
  "chrono",
@@ -1703,7 +1703,7 @@ dependencies = [
 
 [[package]]
 name = "paq1_authn_infra"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "actix-cors",
  "actix-web",
@@ -1724,8 +1724,8 @@ dependencies = [
 
 [[package]]
 name = "paq1_storage_core"
-version = "0.3.0"
-source = "git+https://github.com/paq1/paq1-lib-storage.git?branch=master#864749ce1bd53422f632e401ff4bf4e7bf378f40"
+version = "0.4.0"
+source = "git+https://github.com/paq1/paq1-lib-storage.git?branch=master#bdda29ff6ca59c86c5ec52f857935f681fcd2159"
 dependencies = [
  "async-trait",
  "paq1-lib-error-handler",
@@ -1734,8 +1734,8 @@ dependencies = [
 
 [[package]]
 name = "paq1_storage_infra"
-version = "0.3.0"
-source = "git+https://github.com/paq1/paq1-lib-storage.git?branch=master#864749ce1bd53422f632e401ff4bf4e7bf378f40"
+version = "0.4.0"
+source = "git+https://github.com/paq1/paq1-lib-storage.git?branch=master#bdda29ff6ca59c86c5ec52f857935f681fcd2159"
 dependencies = [
  "async-trait",
  "config",
