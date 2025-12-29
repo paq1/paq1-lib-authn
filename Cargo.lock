@@ -20,21 +20,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "actix-cors"
-version = "0.7.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "daa239b93927be1ff123eebada5a3ff23e89f0124ccb8609234e5103d5a5ae6d"
-dependencies = [
- "actix-utils",
- "actix-web",
- "derive_more",
- "futures-util",
- "log",
- "once_cell",
- "smallvec",
-]
-
-[[package]]
 name = "actix-http"
 version = "3.11.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1694,7 +1679,7 @@ source = "git+https://github.com/paq1/paq1-lib-error-handler.git?branch=master#1
 
 [[package]]
 name = "paq1_authn_core"
-version = "0.1.2"
+version = "0.1.3"
 dependencies = [
  "async-trait",
  "chrono",
@@ -1703,16 +1688,13 @@ dependencies = [
 
 [[package]]
 name = "paq1_authn_infra"
-version = "0.1.2"
+version = "0.1.3"
 dependencies = [
- "actix-cors",
  "actix-web",
  "argon2",
  "async-trait",
  "base64",
- "chrono",
  "futures",
- "mongodb",
  "paq1-lib-error-handler",
  "paq1_authn_core",
  "paq1_storage_core",
@@ -1724,8 +1706,8 @@ dependencies = [
 
 [[package]]
 name = "paq1_storage_core"
-version = "0.4.0"
-source = "git+https://github.com/paq1/paq1-lib-storage.git?branch=master#bdda29ff6ca59c86c5ec52f857935f681fcd2159"
+version = "0.5.0"
+source = "git+https://github.com/paq1/paq1-lib-storage.git?branch=master#bf5d77827aaa891f174e99cf5b06ac0b0ecb9a3f"
 dependencies = [
  "async-trait",
  "paq1-lib-error-handler",
@@ -1734,8 +1716,8 @@ dependencies = [
 
 [[package]]
 name = "paq1_storage_infra"
-version = "0.4.0"
-source = "git+https://github.com/paq1/paq1-lib-storage.git?branch=master#bdda29ff6ca59c86c5ec52f857935f681fcd2159"
+version = "0.5.0"
+source = "git+https://github.com/paq1/paq1-lib-storage.git?branch=master#bf5d77827aaa891f174e99cf5b06ac0b0ecb9a3f"
 dependencies = [
  "async-trait",
  "config",
